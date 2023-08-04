@@ -1,37 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Ogani Welcome </title>
+        <title> Ogani | Store </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/elegant-icons.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/nice-select.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
     </head>
     <body>	
 		{% include 'navbar.html' %}
-		{% include 'top-navbar.html' %}
 		{% block content %}
 		{% endblock %}
 	
 		{% include 'footer.html' %}
 
-        <!-- Js Plugins -->
-        <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
-        <script src="{% static 'js/bootstrap.min.js'%}"></script>
-        <script src="{% static 'js/jquery.nice-select.min.js'%}"></script>
-        <script src="{% static 'js/jquery-ui.min.js'%}"></script>
-        <script src="{% static 'js/jquery.slicknav.js'%}"></script>
-        <script src="{% static 'js/mixitup.min.js'%}"></script>
-        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
-        <script src="{% static 'js/main.js'%}"></script>
-
+    <!-- JavaScript -->
+    <script src="{% static 'login/js/script.js' %}"></script>
     </body>
 </html>

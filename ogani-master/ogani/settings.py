@@ -39,10 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cart',
-    'login',
-    'search',
     'shop',
-    'order',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +57,7 @@ ROOT_URLCONF = 'ogani.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'login','templates/'), os.path.join(BASE_DIR,'shop','templates/'), os.path.join(BASE_DIR,'search','templates/'), os.path.join(BASE_DIR, 'cart', 'templates/'), os.path.join(BASE_DIR,'order','templates/')],
+        'DIRS': [os.path.join(BASE_DIR,'shop','templates/'), os.path.join(BASE_DIR, 'cart', 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,4 +131,3 @@ MEDIA_ROOT = BASE_DIR / 'images'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
